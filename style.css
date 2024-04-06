@@ -1,0 +1,209 @@
+body {
+    font-family: sans-serif;
+    background-color: black;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    margin-bottom: 20px;
+}
+
+.button {
+    background-color: #36bbce;
+    color: black;
+    text-decoration: none;
+    padding: 15px;
+    font-size: 24px;
+    border-radius: 10px;
+    display: block;
+}
+
+nav {
+    border-top: 5px solid white;
+    border-bottom: 5px solid white;
+    padding: 25px 100px 25px 95px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav-link {
+    font-size: 24px;
+    color: white;
+    text-decoration: none;
+    display: block;
+}
+
+h1 {
+    text-align: center;
+    color: white;
+    font-size: 36px;
+    margin-top: 45px;
+    margin-bottom: 40px;
+}
+
+h1::before {
+    background-image: url(https://i.ibb.co/3db6KcS/photo-2024-04-01-15-51-04.jpg);
+    background-size: contain;
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    content: "";
+}
+
+h1::after {
+    background-image: url(https://i.ibb.co/3db6KcS/photo-2024-04-01-15-51-04.jpg);
+    background-size: contain;
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    content: "";
+}
+
+aside {
+    display: block;
+    unicode-bidi: isolate;
+}
+
+.post-text {
+    font-size: 24px;
+}
+
+.info {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.post {
+    background-color: white;
+    padding: 15px 45px 30px 45px;
+    width: 400px;
+    margin: 20px;
+    position: relative;
+}
+
+.post::before {
+    content: url(https://i.ibb.co/JFs1rk2/gleb.png);
+    position: absolute;
+    bottom: -50px;
+    left: -90px;
+    transform: rotate(-15deg);
+    border: medium dotted transparent;
+}
+
+.post:hover::before {
+    content: url(https://i.ibb.co/3kSbM8c/gleb4.png);
+    padding: 14px;
+    border: 2px dotted rgb(148, 0, 0);
+    border-radius: 100%;
+    transition: border 5.5s;
+}
+
+.post:hover {
+    background-color: rgb(77, 0, 0);
+    transition: background-color 1.5s;
+}
+
+.post:hover .article-but, .post:hover p, .post:hover h2 {
+    color: white;
+}
+
+.post:hover .article-but {
+    background-color: black;
+    color: white;
+    transition: color 1.5s, background-color 1.5s;
+}
+
+#post-2::before {
+    content: '';
+}
+
+.article-but {
+    text-decoration: none;
+    background-color: white;
+    color: black;
+    border: black solid 2px;
+    font-size: 24px;
+    text-align: center;
+    padding: 10px 75px 10px 75px;
+    display: block;
+}
+
+.full-image {
+    margin: 100px 0px 100px 0px;
+}
+
+.social_block {
+    position: fixed;
+    right: 0px;
+    top: 260px;
+    background-color: rgb(15, 0, 83);
+    height: 170px;
+    padding-left: 10px;
+    padding-bottom: 10px;
+    border-radius: 10% 0 0 10%;
+    border: 3px dotted purple;
+}
+
+.social_block p {
+    color: white;
+    display: block;
+    width: 30px;
+}
+
+.social_block img:hover {
+    border-bottom: 10px double rgb(0, 100, 146);
+}
+
+.social {
+    margin: 0px 0px 20px 5px;
+    width: 30px;
+}
+
+footer {
+    background-color: white;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 30px 30px 20px 45px;
+}
+
+.footer-text {
+    font-size: 24px;
+    margin-right: 30px;
+}
+
+.address::before {
+    background-image: url(https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTjHMJUiic1kDrA99zO8zoAyZ5l8oKZ_Z_eWN6JyRPuim--dGJY);
+    background-size: contain;
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    content: "";
+}
+
+.tel::before {
+    background-image: url(https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSULcZOs8DtrPKUaxJ4tPfiPkEuBfb6HBLpsJDAQso3L8rrDeK8);
+    background-size: contain;
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    content: "";
+    border-radius: 7px;
+}
+
+.footer-text span {
+    color: #850AE5;
+    font-weight: bolder;
+}
+
+#img-1 {
+    top: 430px;
+    right: 70px;
+    width: 100px;
+    position: absolute;
+}
